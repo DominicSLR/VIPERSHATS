@@ -1,0 +1,288 @@
+
+
+     <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIPERSHATS | Tienda de Gorras</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #eaeaea;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background: #111;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00ff9d; /* acento suave */
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #eaeaea;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ff9d;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("banner.jpg") center/cover no-repeat;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    .productos {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .productos h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 28px;
+      color: #00ff9d;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .producto {
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .producto:hover {
+      transform: scale(1.05);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .producto h3 {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .producto p {
+      margin-bottom: 10px;
+      color: #aaa;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #00ff9d;
+      color: #111;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00cc7a;
+    }
+
+    .nosotros, .contacto {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .nosotros h2, .contacto h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #00ff9d;
+    }
+
+    .nosotros p {
+      text-align: center;
+      font-size: 18px;
+      color: #ccc;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background: #222;
+      color: #fff;
+    }
+
+    button {
+      padding: 12px;
+      background: #00ff9d;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #111;
+    }
+
+    button:hover {
+      background: #00cc7a;
+    }
+
+    footer {
+      background: #111;
+      color: #888;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .social {
+      margin-top: 15px;
+    }
+
+    .social a {
+      margin: 0 10px;
+      color: #00ff9d;
+      font-size: 22px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>VIPERSHATS</h1>
+    <nav>
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Gorras exclusivas, estilo único</h2>
+    <p>Calidad premium ·  Hechas para ti</p>
+  </section>
+
+  <!-- PRODUCTOS -->
+  <section id="productos" class="productos">
+    <h2>Nuestras Gorras</h2>
+    <div class="grid">
+      <div class="producto">
+        <img src="gorra1.jpg" alt="Gorra modelo 1">
+        <h3>EXCLUSIVE</h3>
+        <p>$1500-3000 MXN</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+
+      <div class="producto">
+        <img src="gorra2.jpg" alt="Gorra modelo 2">
+        <h3>PREMIUM</h3>
+        <p>$990 MXN</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+
+      <div class="producto">
+        <img src="gorra3.jpg" alt="Gorra modelo 3">
+        <h3>BASIC</h3>
+        <p>$650 MXN</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros" class="nosotros">
+    <h2>Sobre VIPERSHATS</h2>
+    <p>
+      En <strong>VIPERSHATS</strong> creemos que una gorra no solo es un accesorio,  
+      sino una forma de expresión. Nuestro compromiso es ofrecer diseños únicos,  
+      materiales de calidad y un estilo minimalista que te haga destacar.  
+    </p>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea rows="5" placeholder="Tu mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div class="social">
+      <p>Síguenos en redes:</p>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 VIPERSHATS - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
